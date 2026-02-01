@@ -1,70 +1,69 @@
-*{
-    font-family: Arial, Helvetica, sans-serif ;
-    border: 1px rgb(255, 153, 0);
-    padding: 2px;
+/* RESET Y TIPOGRAFÍA */
+* {
     margin: 0;
-    color: rgb(155, 134, 134)
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #4a3f3f;
 }
 
-body{
-      background-color: rgb(255, 153, 0);
-} 
+/* FONDO GENERAL */
+body {
+    background-color: #f5f2ee;
+}
 
-main{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+/* CONTENEDOR PRINCIPAL */
+main {
     min-height: 80vh;
-}
-
-li a{
-    margin-block: 0.5rem;
-    display: inline-block;
-    text-decoration: none;
-    background-color: rgb(149, 43, 43);
-    padding-inline: 1rem;
-    padding-block: 0.7rem;
-    border-radius: 5px;
-    border: solid 1px rgb(81, 65, 41);
-    transition: all .3s ease-in-out;
-}
-
-li a:hover{
-    background-color: brown;
-    border: solid 1px rgb(81, 65, 41);
-    
-    transform: scale(1.1) rotate(2deg);
-
-}
-
-ul{
-    list-style-type: none;
-}
-
-.titulo h1{
-    font-family: "Pixelify Sans", sans-serif;
-    border: 1px solid  rgb(rgb(149, 43, 43), green, blue);  
-    font-size: 5rem;
-    color: white;
-    text-align: center;
-}
-
-.titulo p{
-    text-align: center;
-    font-style: italic;
-    font-size: 2rem;
-    color: rgb(216, 39, 3);
-
-    }
-
-ul {
-    list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
 }
 
+/* TÍTULO */
+.titulo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #2b1e1e;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.titulo p {
+    font-size: 1.2rem;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #7a6a6a;
+}
+
+/* LISTA */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* BOTONES / LINKS */
+li a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #6b3e3e;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease;
+}
+
+/* HOVER */
+li a:hover {
+    background-color: #553030;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
